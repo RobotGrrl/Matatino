@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6E03BBC13F6BA7200E19A78 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E03BBB13F6BA7200E19A78 /* Cocoa.framework */; };
+		B6E03BC613F6BA7200E19A78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E03BC413F6BA7200E19A78 /* InfoPlist.strings */; };
+		B6E03BCA13F6BA7200E19A78 /* Matatino.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BC913F6BA7200E19A78 /* Matatino.m */; };
+		B6E03BDD13F6BACF00E19A78 /* AMSDKCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD113F6BACF00E19A78 /* AMSDKCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BDE13F6BACF00E19A78 /* AMSerialErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD213F6BACF00E19A78 /* AMSerialErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BDF13F6BACF00E19A78 /* AMSerialPort.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD313F6BACF00E19A78 /* AMSerialPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BE013F6BACF00E19A78 /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BD413F6BACF00E19A78 /* AMSerialPort.m */; };
+		B6E03BE113F6BACF00E19A78 /* AMSerialPortAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD513F6BACF00E19A78 /* AMSerialPortAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BE213F6BACF00E19A78 /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BD613F6BACF00E19A78 /* AMSerialPortAdditions.m */; };
+		B6E03BE313F6BACF00E19A78 /* AMSerialPortList.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD713F6BACF00E19A78 /* AMSerialPortList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BE413F6BACF00E19A78 /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BD813F6BACF00E19A78 /* AMSerialPortList.m */; };
+		B6E03BE513F6BACF00E19A78 /* AMSerialPortList_Deprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BD913F6BACF00E19A78 /* AMSerialPortList_Deprecated.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BE613F6BACF00E19A78 /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BDA13F6BACF00E19A78 /* AMSerialPortList_Deprecated.m */; };
+		B6E03BE713F6BACF00E19A78 /* AMStandardEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BDB13F6BACF00E19A78 /* AMStandardEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E03BE813F6BACF00E19A78 /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03BDC13F6BACF00E19A78 /* AMStandardEnumerator.m */; };
+		B6E03BEB13F6BC7B00E19A78 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E03BE913F6BC6900E19A78 /* IOKit.framework */; };
+		B6E03BF813F6BD9500E19A78 /* Matatino.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E03BC813F6BA7200E19A78 /* Matatino.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6E03BB813F6BA7200E19A78 /* Matatino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Matatino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E03BBB13F6BA7200E19A78 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B6E03BBE13F6BA7200E19A78 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B6E03BBF13F6BA7200E19A78 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6E03BC013F6BA7200E19A78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6E03BC313F6BA7200E19A78 /* Matatino-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matatino-Info.plist"; sourceTree = "<group>"; };
+		B6E03BC513F6BA7200E19A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6E03BC713F6BA7200E19A78 /* Matatino-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Matatino-Prefix.pch"; sourceTree = "<group>"; };
+		B6E03BC813F6BA7200E19A78 /* Matatino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matatino.h; sourceTree = "<group>"; };
+		B6E03BC913F6BA7200E19A78 /* Matatino.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matatino.m; sourceTree = "<group>"; };
+		B6E03BD113F6BACF00E19A78 /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		B6E03BD213F6BACF00E19A78 /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		B6E03BD313F6BACF00E19A78 /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		B6E03BD413F6BACF00E19A78 /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		B6E03BD513F6BACF00E19A78 /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		B6E03BD613F6BACF00E19A78 /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		B6E03BD713F6BACF00E19A78 /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		B6E03BD813F6BACF00E19A78 /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		B6E03BD913F6BACF00E19A78 /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
+		B6E03BDA13F6BACF00E19A78 /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
+		B6E03BDB13F6BACF00E19A78 /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		B6E03BDC13F6BACF00E19A78 /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		B6E03BE913F6BC6900E19A78 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6E03BB413F6BA7200E19A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E03BBC13F6BA7200E19A78 /* Cocoa.framework in Frameworks */,
+				B6E03BEB13F6BC7B00E19A78 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6E03BAC13F6BA7200E19A78 = {
+			isa = PBXGroup;
+			children = (
+				B6E03BC113F6BA7200E19A78 /* Matatino */,
+				B6E03BD013F6BACF00E19A78 /* AMSerialPort */,
+				B6E03BBA13F6BA7200E19A78 /* Frameworks */,
+				B6E03BB913F6BA7200E19A78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E03BB913F6BA7200E19A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BB813F6BA7200E19A78 /* Matatino.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E03BBA13F6BA7200E19A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BE913F6BC6900E19A78 /* IOKit.framework */,
+				B6E03BBB13F6BA7200E19A78 /* Cocoa.framework */,
+				B6E03BBD13F6BA7200E19A78 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E03BBD13F6BA7200E19A78 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BBE13F6BA7200E19A78 /* AppKit.framework */,
+				B6E03BBF13F6BA7200E19A78 /* CoreData.framework */,
+				B6E03BC013F6BA7200E19A78 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B6E03BC113F6BA7200E19A78 /* Matatino */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BC813F6BA7200E19A78 /* Matatino.h */,
+				B6E03BC913F6BA7200E19A78 /* Matatino.m */,
+				B6E03BC213F6BA7200E19A78 /* Supporting Files */,
+			);
+			path = Matatino;
+			sourceTree = "<group>";
+		};
+		B6E03BC213F6BA7200E19A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BC313F6BA7200E19A78 /* Matatino-Info.plist */,
+				B6E03BC413F6BA7200E19A78 /* InfoPlist.strings */,
+				B6E03BC713F6BA7200E19A78 /* Matatino-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6E03BD013F6BACF00E19A78 /* AMSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				B6E03BD113F6BACF00E19A78 /* AMSDKCompatibility.h */,
+				B6E03BD213F6BACF00E19A78 /* AMSerialErrors.h */,
+				B6E03BD313F6BACF00E19A78 /* AMSerialPort.h */,
+				B6E03BD413F6BACF00E19A78 /* AMSerialPort.m */,
+				B6E03BD513F6BACF00E19A78 /* AMSerialPortAdditions.h */,
+				B6E03BD613F6BACF00E19A78 /* AMSerialPortAdditions.m */,
+				B6E03BD713F6BACF00E19A78 /* AMSerialPortList.h */,
+				B6E03BD813F6BACF00E19A78 /* AMSerialPortList.m */,
+				B6E03BD913F6BACF00E19A78 /* AMSerialPortList_Deprecated.h */,
+				B6E03BDA13F6BACF00E19A78 /* AMSerialPortList_Deprecated.m */,
+				B6E03BDB13F6BACF00E19A78 /* AMStandardEnumerator.h */,
+				B6E03BDC13F6BACF00E19A78 /* AMStandardEnumerator.m */,
+			);
+			name = AMSerialPort;
+			path = Matatino/AMSerialPort;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B6E03BB513F6BA7200E19A78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E03BF813F6BD9500E19A78 /* Matatino.h in Headers */,
+				B6E03BDD13F6BACF00E19A78 /* AMSDKCompatibility.h in Headers */,
+				B6E03BDE13F6BACF00E19A78 /* AMSerialErrors.h in Headers */,
+				B6E03BDF13F6BACF00E19A78 /* AMSerialPort.h in Headers */,
+				B6E03BE113F6BACF00E19A78 /* AMSerialPortAdditions.h in Headers */,
+				B6E03BE313F6BACF00E19A78 /* AMSerialPortList.h in Headers */,
+				B6E03BE513F6BACF00E19A78 /* AMSerialPortList_Deprecated.h in Headers */,
+				B6E03BE713F6BACF00E19A78 /* AMStandardEnumerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B6E03BB713F6BA7200E19A78 /* Matatino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E03BCD13F6BA7200E19A78 /* Build configuration list for PBXNativeTarget "Matatino" */;
+			buildPhases = (
+				B6E03BB313F6BA7200E19A78 /* Sources */,
+				B6E03BB413F6BA7200E19A78 /* Frameworks */,
+				B6E03BB513F6BA7200E19A78 /* Headers */,
+				B6E03BB613F6BA7200E19A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Matatino;
+			productName = Matatino;
+			productReference = B6E03BB813F6BA7200E19A78 /* Matatino.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E03BAE13F6BA7200E19A78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = robotgrrl.com;
+			};
+			buildConfigurationList = B6E03BB113F6BA7200E19A78 /* Build configuration list for PBXProject "Matatino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6E03BAC13F6BA7200E19A78;
+			productRefGroup = B6E03BB913F6BA7200E19A78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E03BB713F6BA7200E19A78 /* Matatino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6E03BB613F6BA7200E19A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E03BC613F6BA7200E19A78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E03BB313F6BA7200E19A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E03BCA13F6BA7200E19A78 /* Matatino.m in Sources */,
+				B6E03BE013F6BACF00E19A78 /* AMSerialPort.m in Sources */,
+				B6E03BE213F6BACF00E19A78 /* AMSerialPortAdditions.m in Sources */,
+				B6E03BE413F6BACF00E19A78 /* AMSerialPortList.m in Sources */,
+				B6E03BE613F6BACF00E19A78 /* AMSerialPortList_Deprecated.m in Sources */,
+				B6E03BE813F6BACF00E19A78 /* AMStandardEnumerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6E03BC413F6BA7200E19A78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E03BC513F6BA7200E19A78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6E03BCB13F6BA7200E19A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6E03BCC13F6BA7200E19A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6E03BCE13F6BA7200E19A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matatino/Matatino-Prefix.pch";
+				INFOPLIST_FILE = "Matatino/Matatino-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		B6E03BCF13F6BA7200E19A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matatino/Matatino-Prefix.pch";
+				INFOPLIST_FILE = "Matatino/Matatino-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6E03BB113F6BA7200E19A78 /* Build configuration list for PBXProject "Matatino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E03BCB13F6BA7200E19A78 /* Debug */,
+				B6E03BCC13F6BA7200E19A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E03BCD13F6BA7200E19A78 /* Build configuration list for PBXNativeTarget "Matatino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E03BCE13F6BA7200E19A78 /* Debug */,
+				B6E03BCF13F6BA7200E19A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E03BAE13F6BA7200E19A78 /* Project object */;
+}
