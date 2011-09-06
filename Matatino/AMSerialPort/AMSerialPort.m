@@ -127,8 +127,8 @@ NSString *const AMSerialErrorDomain = @"de.harmless.AMSerial.ErrorDomain";
 // So NSLog and gdb's 'po' command give something useful
 - (NSString *)description
 {
-	NSString *result= [NSString stringWithFormat:@"<%@: %x = name: %@, path: %@, type: %@, fileHandle: %@, fileDescriptor: %d>", NSStringFromClass([self class]), (long unsigned)self, serviceName, bsdPath, serviceType, fileHandle, fileDescriptor];
-	return result;
+    NSString *result= [NSString stringWithFormat:@"<%@: %x = name: %@, path: %@, type: %@, fileHandle: %@, fileDescriptor: %d>", NSStringFromClass([self class]), (long unsigned)self, serviceName, bsdPath, serviceType, fileHandle, fileDescriptor];
+    return result;
 }
 
 - (NSUInteger)hash

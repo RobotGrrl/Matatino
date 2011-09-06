@@ -49,7 +49,7 @@
 
 - (NSArray *)allObjects
 {
-	NSMutableArray *result = [[[NSMutableArray alloc] init] autorelease];
+	NSMutableArray *result = [[NSMutableArray alloc] init];
 	id object;
 	while ((object = [self nextObject]) != nil)
 		[result addObject:object];

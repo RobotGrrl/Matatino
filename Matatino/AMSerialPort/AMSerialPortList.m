@@ -109,6 +109,7 @@ void AMSerialPortWasRemovedNotification(void *refcon, io_iterator_t iterator);
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 	[portList release];
 	[super dealloc];
 }
@@ -193,14 +194,17 @@ void AMSerialPortWasRemovedNotification(void *refcon, io_iterator_t iterator);
 	while ((serialPort = [self getNextSerialPort:iterator]) != nil) {
 		// Since the port was removed, one should obviously not attempt to use it anymore -- so 'close' it.
 		// -close does nothing if the port was never opened.
-		[serialPort close];
+
+        [serialPort close];
 		
-		[portList removeObject:serialPort];
 		[removedPorts addObject:serialPort];
+        [portList removeObject:serialPort];
+                
 	}
 
+    NSDictionary* userInfo = [NSDictionary dictionaryWithObject:removedPorts forKey:AMSerialPortListRemovedPorts];
+    
 	NSNotificationCenter* notifCenter = [NSNotificationCenter defaultCenter];
-	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:removedPorts forKey:AMSerialPortListRemovedPorts];
 	[notifCenter postNotificationName:AMSerialPortListDidRemovePortsNotification object:self userInfo:userInfo];
 }
 

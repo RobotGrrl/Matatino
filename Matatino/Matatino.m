@@ -53,6 +53,11 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
     [AMSerialPortList sharedPortList];
 }
 
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super dealloc];
+}
+
 
 #pragma mark - Connect/disconnect
 
@@ -110,7 +115,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
 
 - (BOOL) send:(NSString *)tx {
     
-    NSString *sendString = [tx stringByAppendingString:@"\r"];
+    NSString *sendString = tx;
     NSError *error = nil;
     
     if([port isOpen]) {
@@ -134,7 +139,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
 - (NSArray *) deviceNames {
     
     NSEnumerator *enumerator = [AMSerialPortList portEnumerator];
-    NSMutableArray *allDevices = [[NSMutableArray alloc] initWithCapacity:6]; // just some random number
+    NSMutableArray *allDevices = [[[NSMutableArray alloc] initWithCapacity:6] autorelease]; // just some random number
     AMSerialPort *aPort;
     
     while (aPort = [enumerator nextObject]) {
@@ -164,7 +169,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
 #pragma mark - AMSerialPort Delegate Methods
 
 - (void) serialPortReadData:(NSDictionary *)dataDictionary {
-    
+        
     // Get the data
     AMSerialPort *sendPort = [dataDictionary objectForKey:@"serialPort"];
     NSData *data = [dataDictionary objectForKey:@"data"];
@@ -181,6 +186,9 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
         // Keep on listening!
         [sendPort readDataInBackground];
         
+        // Release, geez!
+        [receivedText release];
+        
     } else { 
         // Port closed
         if(debug) NSLog(@"Port was closed on a readData operation ... not good!");
@@ -196,7 +204,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
     if(debug) NSLog(@"A port was added");
     NSArray *ports = [[theNotification userInfo] objectForKey:AMSerialPortListAddedPorts];
     
-    NSMutableArray *portNames = [[NSMutableArray alloc] initWithCapacity:1]; // Even though it can be > 1, it's really rare :P, so we can let the NSMutableArray deal with it if it is >1
+    NSMutableArray *portNames = [[[NSMutableArray alloc] initWithCapacity:1] autorelease]; // Even though it can be > 1, it's really rare :P, so we can let the NSMutableArray deal with it if it is >1
     
     for(AMSerialPort *aPort in ports) {
         [portNames addObject:[aPort bsdPath]];
@@ -209,7 +217,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
     if(debug) NSLog(@"A port was removed");
     NSArray *ports = [[theNotification userInfo] objectForKey:AMSerialPortListRemovedPorts];
     
-    NSMutableArray *portNames = [[NSMutableArray alloc] initWithCapacity:1]; // Even though it can be > 1, it's really rare :P, so we can let the NSMutableArray deal with it if it is >1
+    NSMutableArray *portNames = [[[NSMutableArray alloc] initWithCapacity:1] autorelease]; // Even though it can be > 1, it's really rare :P, so we can let the NSMutableArray deal with it if it is >1
     
     for(AMSerialPort *aPort in ports) {
         [portNames addObject:[aPort bsdPath]];
