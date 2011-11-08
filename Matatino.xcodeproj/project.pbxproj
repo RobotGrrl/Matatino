@@ -270,6 +270,7 @@
 		B6E03BAE13F6BA7200E19A78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = robotgrrl.com;
 			};
 			buildConfigurationList = B6E03BB113F6BA7200E19A78 /* Build configuration list for PBXProject "Matatino" */;

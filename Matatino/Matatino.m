@@ -192,6 +192,7 @@ Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
     } else { 
         // Port closed
         if(debug) NSLog(@"Port was closed on a readData operation ... not good!");
+        [self disconnect];
         [delegate portClosed];
     }
     
